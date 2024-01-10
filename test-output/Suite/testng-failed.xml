@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" name="TestChrome(failed)">
+    <parameter name="grid" value="yes"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="gridURL" value="http://192.168.29.187:4444"/>
+    <classes>
+      <class name="script.TestDemo">
+        <methods>
+          <include name="postCondition"/>
+          <include name="test1"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- script.TestDemo -->
+    </classes>
+  </test> <!-- TestChrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
