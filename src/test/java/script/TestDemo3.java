@@ -10,6 +10,6 @@ public class TestDemo3 extends BaseTest
 	@Test
 	public void test1()
 	{
-		Reporter.log("Bhanu Executing test1....",true);
+		Reporter.log("Ambika Executing test1....",true);
 	}
 }
