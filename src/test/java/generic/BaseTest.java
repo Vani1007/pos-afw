@@ -21,13 +21,14 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
-public class BaseTest {
+public class BaseTest implements IAutoConst{
+
 	public WebDriver driver;
 	public WebDriverWait wait;
 	
 	@Parameters({"grid","gridURL","browser","env"})
 	@BeforeMethod
-	public void preCondition(@Optional("no")String grid,@Optional("")String gridURL,@Optional("chrome")String browser,@Optional("qa_env.properties")String env) throws Exception
+	public void preCondition(@Optional(GRID)String grid,@Optional(GRIDURL)String gridURL,@Optional(BROWSER)String browser,@Optional(ENV)String env) throws Exception
 	{
 		if(grid.equalsIgnoreCase("yes"))
 		{
@@ -91,7 +92,7 @@ public class BaseTest {
 			TakesScreenshot t=(TakesScreenshot)driver;
 			File srcFile = t.getScreenshotAs(OutputType.FILE);
 			
-			String path="./screenshots/"+testName+".png";
+			String path=SCREENSHOT+testName+".png";
 			File dstFile = new File(path);
 			
 			FileUtils.copyFile(srcFile, dstFile);
