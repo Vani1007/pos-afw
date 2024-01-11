@@ -25,9 +25,9 @@ public class BaseTest {
 	public WebDriver driver;
 	public WebDriverWait wait;
 	
-	@Parameters({"grid","gridURL","browser"})
+	@Parameters({"grid","gridURL","browser","env"})
 	@BeforeMethod
-	public void preCondition(@Optional("no")String grid,@Optional("")String gridURL,@Optional("chrome")String browser) throws Exception
+	public void preCondition(@Optional("no")String grid,@Optional("")String gridURL,@Optional("chrome")String browser,@Optional("qa_env.properties")String env) throws Exception
 	{
 		if(grid.equalsIgnoreCase("yes"))
 		{
@@ -65,14 +65,19 @@ public class BaseTest {
 		driver.manage().window().maximize();
 		Reporter.log("maximize the browser",true);
 		
-		driver.get("http://www.google.com");
-		Reporter.log("enter the app URL",true);
+		String appURL=Utility.getProperty(env,"APPURL");
+		driver.get(appURL);
+		Reporter.log("enter the app URL:"+appURL,true);
 		
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		Reporter.log("Set ITO",true);
 		
-		wait=new WebDriverWait(driver, Duration.ofSeconds(10));
-		Reporter.log("Set ETO",true);
+		int ITO=Integer.parseInt(Utility.getProperty(env,"ITO"));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(ITO));
+		Reporter.log("Set ITO:"+ITO,true);
+		
+		
+		int ETO=Integer.parseInt(Utility.getProperty(env,"ETO"));
+		wait=new WebDriverWait(driver, Duration.ofSeconds(ETO));
+		Reporter.log("Set ETO:"+ETO,true);
 	}
 	
 	@AfterMethod
