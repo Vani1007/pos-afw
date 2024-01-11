@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Open Chrome in Local]]>
+      <![CDATA[Open Edge in Grid]]>
     </line>
     <line>
       <![CDATA[maximize the browser]]>
     </line>
     <line>
-      <![CDATA[enter the app URL:http://www.fb.com]]>
+      <![CDATA[enter the app URL:http://www.gmail.com]]>
     </line>
     <line>
-      <![CDATA[Set ITO:7]]>
+      <![CDATA[Set ITO:12]]>
     </line>
     <line>
-      <![CDATA[Set ETO:5]]>
+      <![CDATA[Set ETO:10]]>
     </line>
     <line>
       <![CDATA[Bhanu Executing test1....Jai Ganesh]]>
@@ -25,65 +25,89 @@
     <line>
       <![CDATA[Close the browser]]>
     </line>
+    <line>
+      <![CDATA[Open Edge in Grid]]>
+    </line>
+    <line>
+      <![CDATA[maximize the browser]]>
+    </line>
+    <line>
+      <![CDATA[enter the app URL:http://www.gmail.com]]>
+    </line>
+    <line>
+      <![CDATA[Set ITO:12]]>
+    </line>
+    <line>
+      <![CDATA[Set ETO:10]]>
+    </line>
+    <line>
+      <![CDATA[Ravi Executing test1....]]>
+    </line>
+    <line>
+      <![CDATA[Test:test1 is PASSED, hence NO screenshot has been taken:]]>
+    </line>
+    <line>
+      <![CDATA[Close the browser]]>
+    </line>
   </reporter-output>
-  <suite started-at="2024-01-11T02:38:48Z" name="Default suite" finished-at="2024-01-11T02:38:58Z" duration-ms="9271">
+  <suite started-at="2024-01-11T02:53:08Z" name="Suite" finished-at="2024-01-11T02:53:25Z" duration-ms="17588">
     <groups>
     </groups>
-    <test started-at="2024-01-11T02:38:48Z" name="Default test" finished-at="2024-01-11T02:38:58Z" duration-ms="9271">
+    <test started-at="2024-01-11T02:53:08Z" name="TestChrome" finished-at="2024-01-11T02:53:25Z" duration-ms="17588">
       <class name="script.TestDemo">
-        <test-method is-config="true" signature="preCondition(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:script.TestDemo@12d2ce03]" started-at="2024-01-11T02:38:48Z" name="preCondition" finished-at="2024-01-11T02:38:55Z" duration-ms="6526" status="PASS">
+        <test-method is-config="true" signature="preCondition(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:script.TestDemo@10959ece]" started-at="2024-01-11T02:53:08Z" name="preCondition" finished-at="2024-01-11T02:53:18Z" duration-ms="9618" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[no]]>
+                <![CDATA[yes]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[]]>
+                <![CDATA[http://192.168.29.187:4444]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[qa_env.properties]]>
+                <![CDATA[staging_env.properties]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[Open Chrome in Local]]>
+              <![CDATA[Open Edge in Grid]]>
             </line>
             <line>
               <![CDATA[maximize the browser]]>
             </line>
             <line>
-              <![CDATA[enter the app URL:http://www.fb.com]]>
+              <![CDATA[enter the app URL:http://www.gmail.com]]>
             </line>
             <line>
-              <![CDATA[Set ITO:7]]>
+              <![CDATA[Set ITO:12]]>
             </line>
             <line>
-              <![CDATA[Set ETO:5]]>
+              <![CDATA[Set ETO:10]]>
             </line>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method signature="test1()[pri:0, instance:script.TestDemo@12d2ce03]" started-at="2024-01-11T02:38:55Z" name="test1" finished-at="2024-01-11T02:38:57Z" duration-ms="2275" status="PASS">
+        <test-method signature="test1()[pri:0, instance:script.TestDemo@10959ece]" started-at="2024-01-11T02:53:18Z" name="test1" finished-at="2024-01-11T02:53:19Z" duration-ms="1312" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Bhanu Executing test1....Jai Ganesh]]>
             </line>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:script.TestDemo@12d2ce03]" started-at="2024-01-11T02:38:57Z" name="postCondition" finished-at="2024-01-11T02:38:58Z" duration-ms="413" status="PASS">
+        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:script.TestDemo@10959ece]" started-at="2024-01-11T02:53:19Z" name="postCondition" finished-at="2024-01-11T02:53:19Z" duration-ms="422" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test1 status=SUCCESS method=TestDemo.test1()[pri:0, instance:script.TestDemo@12d2ce03] output=Bhanu Executing test1....Jai Ganesh]]]>
+                <![CDATA[[TestResult name=test1 status=SUCCESS method=TestDemo.test1()[pri:0, instance:script.TestDemo@10959ece] output=Bhanu Executing test1....Jai Ganesh]]]>
               </value>
             </param>
           </params>
@@ -97,6 +121,73 @@
           </reporter-output>
         </test-method> <!-- postCondition -->
       </class> <!-- script.TestDemo -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="script.TestDemo2">
+        <test-method is-config="true" signature="preCondition(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:script.TestDemo2@3a6bb9bf]" started-at="2024-01-11T02:53:19Z" name="preCondition" finished-at="2024-01-11T02:53:25Z" duration-ms="5701" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[yes]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://192.168.29.187:4444]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[staging_env.properties]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Open Edge in Grid]]>
+            </line>
+            <line>
+              <![CDATA[maximize the browser]]>
+            </line>
+            <line>
+              <![CDATA[enter the app URL:http://www.gmail.com]]>
+            </line>
+            <line>
+              <![CDATA[Set ITO:12]]>
+            </line>
+            <line>
+              <![CDATA[Set ETO:10]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="test1()[pri:0, instance:script.TestDemo2@3a6bb9bf]" started-at="2024-01-11T02:53:25Z" name="test1" finished-at="2024-01-11T02:53:25Z" duration-ms="3" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Ravi Executing test1....]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:script.TestDemo2@3a6bb9bf]" started-at="2024-01-11T02:53:25Z" name="postCondition" finished-at="2024-01-11T02:53:25Z" duration-ms="466" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test1 status=SUCCESS method=TestDemo2.test1()[pri:0, instance:script.TestDemo2@3a6bb9bf] output=Ravi Executing test1....]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test:test1 is PASSED, hence NO screenshot has been taken:]]>
+            </line>
+            <line>
+              <![CDATA[Close the browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- script.TestDemo2 -->
+    </test> <!-- TestChrome -->
+  </suite> <!-- Suite -->
 </testng-results>

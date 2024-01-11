@@ -6,7 +6,7 @@ import java.util.Properties;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
-public class Utility {
+public abstract class Utility {
 
 	public static String getProperty(String path,String key)
 	{
