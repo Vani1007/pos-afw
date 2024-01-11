@@ -2,9 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
   <test thread-count="5" name="TestChrome(failed)">
-    <parameter name="grid" value="yes"/>
+    <parameter name="grid" value="no"/>
     <parameter name="browser" value="chrome"/>
     <parameter name="gridURL" value="http://192.168.29.187:4444"/>
+    <parameter name="env" value="staging_env.properties"/>
     <classes>
       <class name="script.TestDemo">
         <methods>

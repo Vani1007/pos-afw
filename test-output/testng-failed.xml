@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" name="TestChrome(failed)">
+    <parameter name="grid" value="no"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="gridURL" value="http://192.168.29.187:4444"/>
+    <parameter name="env" value="staging_env.properties"/>
     <classes>
       <class name="script.TestDemo">
         <methods>
@@ -11,5 +15,5 @@
         </methods>
       </class> <!-- script.TestDemo -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- TestChrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Open Chrome in Local]]>
@@ -8,30 +8,30 @@
       <![CDATA[maximize the browser]]>
     </line>
     <line>
-      <![CDATA[enter the app URL]]>
+      <![CDATA[enter the app URL:http://www.fb.com]]>
     </line>
     <line>
-      <![CDATA[Set ITO]]>
+      <![CDATA[Set ITO:7]]>
     </line>
     <line>
-      <![CDATA[Set ETO]]>
+      <![CDATA[Set ETO:5]]>
     </line>
     <line>
-      <![CDATA[Bhanu Executing test1....]]>
+      <![CDATA[Bhanu Executing test1....Jai Ganesh]]>
     </line>
     <line>
-      <![CDATA[Test:test1 is Failed, hence screenshot has been taken:./screenshots/test1.png]]>
+      <![CDATA[Test:test1 is PASSED, hence NO screenshot has been taken:]]>
     </line>
     <line>
       <![CDATA[Close the browser]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-01-10T03:33:56Z" name="Default suite" finished-at="2024-01-10T03:34:04Z" duration-ms="7935">
+  <suite started-at="2024-01-11T02:38:48Z" name="Default suite" finished-at="2024-01-11T02:38:58Z" duration-ms="9271">
     <groups>
     </groups>
-    <test started-at="2024-01-10T03:33:56Z" name="Default test" finished-at="2024-01-10T03:34:04Z" duration-ms="7935">
+    <test started-at="2024-01-11T02:38:48Z" name="Default test" finished-at="2024-01-11T02:38:58Z" duration-ms="9271">
       <class name="script.TestDemo">
-        <test-method is-config="true" signature="preCondition(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:script.TestDemo@12d2ce03]" started-at="2024-01-10T03:33:56Z" name="preCondition" finished-at="2024-01-10T03:34:03Z" duration-ms="7167" status="PASS">
+        <test-method is-config="true" signature="preCondition(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:script.TestDemo@12d2ce03]" started-at="2024-01-11T02:38:48Z" name="preCondition" finished-at="2024-01-11T02:38:55Z" duration-ms="6526" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,6 +48,11 @@
                 <![CDATA[chrome]]>
               </value>
             </param>
+            <param index="3">
+              <value>
+                <![CDATA[qa_env.properties]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
             <line>
@@ -57,71 +62,34 @@
               <![CDATA[maximize the browser]]>
             </line>
             <line>
-              <![CDATA[enter the app URL]]>
+              <![CDATA[enter the app URL:http://www.fb.com]]>
             </line>
             <line>
-              <![CDATA[Set ITO]]>
+              <![CDATA[Set ITO:7]]>
             </line>
             <line>
-              <![CDATA[Set ETO]]>
+              <![CDATA[Set ETO:5]]>
             </line>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method signature="test1()[pri:0, instance:script.TestDemo@12d2ce03]" started-at="2024-01-10T03:34:03Z" name="test1" finished-at="2024-01-10T03:34:03Z" duration-ms="16" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.fail(Assert.java:103)
-at script.TestDemo.test1(TestDemo.java:15)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="test1()[pri:0, instance:script.TestDemo@12d2ce03]" started-at="2024-01-11T02:38:55Z" name="test1" finished-at="2024-01-11T02:38:57Z" duration-ms="2275" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Bhanu Executing test1....]]>
+              <![CDATA[Bhanu Executing test1....Jai Ganesh]]>
             </line>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:script.TestDemo@12d2ce03]" started-at="2024-01-10T03:34:03Z" name="postCondition" finished-at="2024-01-10T03:34:04Z" duration-ms="696" status="PASS">
+        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:script.TestDemo@12d2ce03]" started-at="2024-01-11T02:38:57Z" name="postCondition" finished-at="2024-01-11T02:38:58Z" duration-ms="413" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test1 status=FAILURE method=TestDemo.test1()[pri:0, instance:script.TestDemo@12d2ce03] output=Bhanu Executing test1....]]]>
+                <![CDATA[[TestResult name=test1 status=SUCCESS method=TestDemo.test1()[pri:0, instance:script.TestDemo@12d2ce03] output=Bhanu Executing test1....Jai Ganesh]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[Test:test1 is Failed, hence screenshot has been taken:./screenshots/test1.png]]>
+              <![CDATA[Test:test1 is PASSED, hence NO screenshot has been taken:]]>
             </line>
             <line>
               <![CDATA[Close the browser]]>
