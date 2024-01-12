@@ -42,13 +42,20 @@ public class LoginPage {
 		goBTN.click();
 	}
 	
-	public boolean verifyErrMsgIsDisplayed(WebDriverWait wait)
+	public boolean verifyErrMsgIsDisplayed(WebDriverWait wait,String eText)
 	{
 		try 
 		{
 			wait.until(ExpectedConditions.visibilityOf(errMsg));
 			Reporter.log("Err Msg is Displayed",true);
-			return true;
+			
+			String aText=errMsg.getText();
+			
+			Reporter.log("Expected Err Msg:"+eText,true);
+			Reporter.log("Actual Err Msg:"+aText,true);
+			
+			return aText.equalsIgnoreCase(eText);
+
 		}
 		catch (Exception e) 
 		{
