@@ -17,21 +17,27 @@
       <![CDATA[Set ETO:5]]>
     </line>
     <line>
-      <![CDATA[Home Page is Displayed]]>
+      <![CDATA[Err Msg is Displayed]]>
     </line>
     <line>
-      <![CDATA[Test:testValidLogin is PASSED, hence NO screenshot has been taken:]]>
+      <![CDATA[Expected Err Msg:Invalid username and/or password.]]>
+    </line>
+    <line>
+      <![CDATA[Actual Err Msg:Invalid username and/or password.]]>
+    </line>
+    <line>
+      <![CDATA[Test:testInvalidLogin is PASSED, hence NO screenshot has been taken:]]>
     </line>
     <line>
       <![CDATA[Close the browser]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-01-12T02:10:11Z" name="Default suite" finished-at="2024-01-12T02:10:24Z" duration-ms="12902">
+  <suite started-at="2024-01-12T02:34:54Z" name="Default suite" finished-at="2024-01-12T02:35:02Z" duration-ms="7817">
     <groups>
     </groups>
-    <test started-at="2024-01-12T02:10:11Z" name="Default test" finished-at="2024-01-12T02:10:24Z" duration-ms="12902">
-      <class name="script.ValidLogin">
-        <test-method is-config="true" signature="preCondition(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:script.ValidLogin@c7ba306]" started-at="2024-01-12T02:10:11Z" name="preCondition" finished-at="2024-01-12T02:10:20Z" duration-ms="9174" status="PASS">
+    <test started-at="2024-01-12T02:34:54Z" name="Default test" finished-at="2024-01-12T02:35:02Z" duration-ms="7817">
+      <class name="script.InvalidLogin">
+        <test-method is-config="true" signature="preCondition(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:script.InvalidLogin@7e5c856f]" started-at="2024-01-12T02:34:54Z" name="preCondition" finished-at="2024-01-12T02:34:59Z" duration-ms="4755" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -72,31 +78,37 @@
             </line>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method signature="testValidLogin()[pri:1, instance:script.ValidLogin@c7ba306]" started-at="2024-01-12T02:10:20Z" name="testValidLogin" finished-at="2024-01-12T02:10:23Z" duration-ms="3221" status="PASS">
+        <test-method signature="testInvalidLogin()[pri:2, instance:script.InvalidLogin@7e5c856f]" started-at="2024-01-12T02:34:59Z" name="testInvalidLogin" finished-at="2024-01-12T02:35:01Z" duration-ms="2605" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Home Page is Displayed]]>
+              <![CDATA[Err Msg is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Expected Err Msg:Invalid username and/or password.]]>
+            </line>
+            <line>
+              <![CDATA[Actual Err Msg:Invalid username and/or password.]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:script.ValidLogin@c7ba306]" started-at="2024-01-12T02:10:23Z" name="postCondition" finished-at="2024-01-12T02:10:24Z" duration-ms="463" status="PASS">
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:script.InvalidLogin@7e5c856f]" started-at="2024-01-12T02:35:01Z" name="postCondition" finished-at="2024-01-12T02:35:02Z" duration-ms="401" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@c7ba306] output=Home Page is Displayed]]]>
+                <![CDATA[[TestResult name=testInvalidLogin status=SUCCESS method=InvalidLogin.testInvalidLogin()[pri:2, instance:script.InvalidLogin@7e5c856f] output=Err Msg is Displayed]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[Test:testValidLogin is PASSED, hence NO screenshot has been taken:]]>
+              <![CDATA[Test:testInvalidLogin is PASSED, hence NO screenshot has been taken:]]>
             </line>
             <line>
               <![CDATA[Close the browser]]>
             </line>
           </reporter-output>
         </test-method> <!-- postCondition -->
-      </class> <!-- script.ValidLogin -->
+      </class> <!-- script.InvalidLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
